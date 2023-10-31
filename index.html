@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Api & Opp</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styel.css">
+</head>
+<body >
+    <header id="setting"> 
+        <div class="layer">
+            <div class="item-header d-flex justify-content-center py-4">
+                <h1 class=" text-white m-auto">setting Your Quiz</h1>
+            </div><!--/item-->
+            <div class="content-header py-5"> 
+                <h3 class=" mx-5 text-white p-2">Category</h3>
+                <select name="Category" id="seletor" class=" form-control-color w-75  mx-5 ">
+                    <option value="9">General Knowlege</option>
+                    <option value="27">Animals</option>
+                    <option value="15">Video Game</option>
+                    <option value="23">History</option>
+                    <option value="21">Sport</option>
+                    <option value="18">Science:Computer</option>
+                </select>
+            </div><!--content-header-->
+            <div class="Difficulty-header py-5 text-white mx-4">
+                <h3 class=" mx-1 text-white p-3">Difficulty</h3>
+                <div class="form-check">
+                    <label for="Difficulty" >
+                <input class=" mx-2" type="radio"  value="easy" name="choces" 
+                checked>
+                Easy
+                 </label><br>
+                <label for="Difficulty">
+                <input class=" mx-2" type="radio"  value="medium" name="choces" checked>
+                Medium
+                </label><br>
+                <label for="Difficulty">
+                <input class=" mx-2" type="radio" value="hard" name="choces" checked>
+                Hard
+               </label><br>
+                </div><!--/form-check-->
+                <input id="numberQuestion" type="number" class=" my-4 form-control-color w-75 mx-5" placeholder="Number Of Questions" >
+                <button class="btn-header">Start</button>
+            </div>
+
+           
+
+        </div><!--/layer-->
+        
+
+    </header>
+    <section id="Quiz" class=" position-relative ">
+        <div class="layer-Quiz">
+            <div class="item-quiz text-white py-4 ">
+                <h1 class="text-center">Quiz</h1>
+                <button class="btn-quiz"><span id="currentQuestion"></span> of <span id="realQuestion"></span> Questions</button>
+
+                <span id="inCorrect" class=" btn btn-danger float-left mx-3">InCorrect</span>
+                <span id="Correct" class=" btn btn-info float-left">Correct</span>
+            </div><!--/layer-Quiz-->
+            <div  class="content-quiz py-5 text-white p-3 ">
+                <h3 class=" d-inline">q : </h3>
+                <h5 id="question" class="py-5 fa-1x d-inline"></h5>
+                <div id="rowAnswer"></div>
+                <div id="alert" class=" alert-danger mt-3 w-50 p-4"> place choose Any Answer</div>
+                <button class="btn-submit">submit</button>
+
+            </div><!--content-quiz/-->
+
+        </div><!--/layer-Quiz-->
+        
+    </section>
+    <section id="fininsh" class=" position-relative ">
+        <div class="layer-fininsh">
+            <div class="item-fininsh text-white py-5">
+                <h1 class=" text-center my-5">Fininsh</h1>
+            </div><!--/item-fininsh-->
+            <div class=" content-fininsh mx-5 text-white">
+                <h3  class=" text-center my-5">Score</h3>
+                <h1 id="score" class=" text-center"></h1>
+                <button class="btn-fininsh">Try Again?</button>
+            </div>
+        </div><!--/layer-fininsh-->
+    </section>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
+
+
